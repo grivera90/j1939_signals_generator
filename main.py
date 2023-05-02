@@ -101,14 +101,15 @@ def show_payload(pload):
 
     print('{', end='')
     for k in range(0, int(len(pload))):
-        print(f'{hex(pload[k])}', end='')
-
+        print(f"0x{pload[k]:02x}", end='')
+	
         if k == int(len(pload)) - 1:
             print(f'', end='')
         else:
             print(f', ', end='')
 
     print('}', end='')
+    print("")
 
 
 # Press the green button in the gutter to run the script.
